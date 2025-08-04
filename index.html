@@ -16,6 +16,18 @@
             text-align: center;
             padding: 20px 0;
             background-color: white;
+            border-bottom: 1px solid #d9e2ec;
+        }
+        .logo-img {
+            max-height: 80px;
+            width: auto;
+        }
+        .logo-fallback {
+            display: inline-block;
+            padding: 20px;
+            border: 2px dashed #4a6da7;
+            color: #4a6da7;
+            font-weight: bold;
         }
         .header {
             background-color: #4a6da7;
@@ -78,9 +90,21 @@
     </style>
 </head>
 <body>
-    <!-- COMPANY LOGO - REPLACE THE IMAGE SRC WITH YOUR ACTUAL LOGO FILE -->
+    <!-- COMPANY LOGO - CHOOSE ONE OF THESE OPTIONS -->
     <div class="logo-container">
-        <img src="New_Gtech_Logo_2025-Transp.png" alt="Company Logo" style="max-height: 80px;">
+        <!-- OPTION 1: Local file (place image in same folder as HTML) -->
+        <img src="New_Gtech_Logo_2025-Transp.png" alt="Company Logo" class="logo-img">
+        
+        <!-- OPTION 2: Online hosted image (uncomment and replace URL) -->
+        <!-- <img src="https://example.com/path/to/New_Gtech_Logo_2025-Transp.png" alt="Company Logo" class="logo-img"> -->
+        
+        <!-- OPTION 3: Base64 encoded image (most reliable) -->
+        <!-- <img src="data:image/png;base64,YOUR_BASE64_CODE_HERE" alt="Company Logo" class="logo-img"> -->
+        
+        <!-- Fallback text if image doesn't load -->
+        <noscript>
+            <div class="logo-fallback">New Gtech Logo</div>
+        </noscript>
     </div>
 
     <div class="header">
