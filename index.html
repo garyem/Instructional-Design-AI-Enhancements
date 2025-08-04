@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How OpenAI's Browser-Based LLMs Transform eLearning</title>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -21,13 +23,6 @@
         .logo-img {
             max-height: 80px;
             width: auto;
-        }
-        .logo-fallback {
-            display: inline-block;
-            padding: 20px;
-            border: 2px dashed #4a6da7;
-            color: #4a6da7;
-            font-weight: bold;
         }
         .header {
             background-color: #4a6da7;
@@ -68,6 +63,11 @@
             font-weight: bold;
             color: #243b53;
         }
+        .icon-cell {
+            text-align: center;
+            font-size: 24px;
+            color: #4a6da7;
+        }
         .impact-cell {
             background-color: #fff8e6;
         }
@@ -86,25 +86,23 @@
                 width: 120px;
                 color: #4a6da7;
             }
+            .icon-cell {
+                text-align: left;
+                font-size: 20px;
+                padding-left: 120px;
+            }
+            .icon-cell:before {
+                content: "Icon: ";
+                font-weight: bold;
+                color: #4a6da7;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- COMPANY LOGO - CHOOSE ONE OF THESE OPTIONS -->
+    <!-- COMPANY LOGO -->
     <div class="logo-container">
-        <!-- OPTION 1: Local file (place image in same folder as HTML) -->
         <img src="New_Gtech_Logo_2025-Transp.png" alt="Company Logo" class="logo-img">
-        
-        <!-- OPTION 2: Online hosted image (uncomment and replace URL) -->
-        <!-- <img src="https://example.com/path/to/New_Gtech_Logo_2025-Transp.png" alt="Company Logo" class="logo-img"> -->
-        
-        <!-- OPTION 3: Base64 encoded image (most reliable) -->
-        <!-- <img src="data:image/png;base64,YOUR_BASE64_CODE_HERE" alt="Company Logo" class="logo-img"> -->
-        
-        <!-- Fallback text if image doesn't load -->
-        <noscript>
-            <div class="logo-fallback">New Gtech Logo</div>
-        </noscript>
     </div>
 
     <div class="header">
@@ -119,32 +117,39 @@
         <thead>
             <tr>
                 <th>Feature</th>
+                <th>Icon</th>
                 <th>Impact on Instructional Design</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td data-label="Feature" class="feature-cell">1. Secure, Seamless AI Integration</td>
+                <td data-label="Icon" class="icon-cell"><i class="fas fa-shield-alt"></i></td>
                 <td data-label="Impact" class="impact-cell">Like adding a smart assistant to your course—just plug in browser code for instant AI functionality without complex setups.</td>
             </tr>
             <tr>
                 <td data-label="Feature" class="feature-cell">2. Personalized Learning</td>
+                <td data-label="Icon" class="icon-cell"><i class="fas fa-user-graduate"></i></td>
                 <td data-label="Impact" class="impact-cell">AI adapts content in real-time based on learner responses, functioning like a 24/7 personal tutor.</td>
             </tr>
             <tr>
                 <td data-label="Feature" class="feature-cell">3. AI-Assisted Content Creation</td>
+                <td data-label="Icon" class="icon-cell"><i class="fas fa-robot"></i></td>
                 <td data-label="Impact" class="impact-cell">Generate quizzes, summaries, and activities instantly through natural language prompts (e.g., "Create 5 MCQ questions about cybersecurity").</td>
             </tr>
             <tr>
                 <td data-label="Feature" class="feature-cell">4. Accessibility Boost</td>
+                <td data-label="Icon" class="icon-cell"><i class="fas fa-universal-access"></i></td>
                 <td data-label="Impact" class="impact-cell">Auto-adds text-to-speech, translations, and readability adjustments—no extra plugins required.</td>
             </tr>
             <tr>
                 <td data-label="Feature" class="feature-cell">5. Real-Time Collaboration</td>
+                <td data-label="Icon" class="icon-cell"><i class="fas fa-users"></i></td>
                 <td data-label="Impact" class="impact-cell">AI moderates discussions, summarizes debates, and suggests resources during live sessions.</td>
             </tr>
             <tr>
                 <td data-label="Feature" class="feature-cell">6. Built-In Security</td>
+                <td data-label="Icon" class="icon-cell"><i class="fas fa-lock"></i></td>
                 <td data-label="Impact" class="impact-cell">Browser-based processing keeps sensitive training data local, meeting strict compliance requirements.</td>
             </tr>
         </tbody>
